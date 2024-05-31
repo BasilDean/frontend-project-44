@@ -13,4 +13,12 @@ const checkAnswer = (answer, name, correctAnswer) => {
 
 const getRandomNum = () => Math.floor(Math.random() * RANDOM_NUM_CEIL + RANDOM_NUM_FLOOR);
 
-export { checkAnswer, getRandomNum };
+const gcd = (n1, n2) => {
+    if (n2 === 0) {
+        return n1;
+    } else {
+        return gcd(n2, n1 % n2);
+    }
+};
+
+export { checkAnswer, getRandomNum, gcd };

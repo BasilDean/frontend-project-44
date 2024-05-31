@@ -33,4 +33,4 @@ const askCalcQuestion = (name) => {
 };
 
 
-export const playCalcGame = (name, rounds) => playGame(name, askCalcQuestion, rounds);
+export const playCalcGame = (name, rounds, taskDescription = 'What is the result of the expression?') => playGame(name, askCalcQuestion, rounds, taskDescription);
