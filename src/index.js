@@ -10,10 +10,7 @@ const checkAnswer = (answer, name, correctAnswer) => {
   return false;
 };
 
-const getRandomNum = (
-  min = RANDOM_NUM_FLOOR,
-  max = RANDOM_NUM_CEIL,
-) => Math.floor(Math.random() * max + min);
+const getRandomNum = () => Math.floor(Math.random() * RANDOM_NUM_CEIL + RANDOM_NUM_FLOOR);
 
 const gcd = (n1, n2) => {
   if (n2 === 0) {
