@@ -1,5 +1,5 @@
 
-const RANDOM_NUM_CEIL = 10;
+const RANDOM_NUM_CEIL = 100;
 const RANDOM_NUM_FLOOR = 1;
 
 const NUMBER_OF_ROUNDS = 3;

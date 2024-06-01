@@ -11,7 +11,7 @@ const checkAnswer = (answer, name, correctAnswer) => {
     }
 };
 
-const getRandomNum = (min = 1, max = 2) => Math.floor(Math.random() * RANDOM_NUM_CEIL + RANDOM_NUM_FLOOR);
+const getRandomNum = (min = RANDOM_NUM_FLOOR, max = RANDOM_NUM_CEIL) => Math.floor(Math.random() * max + min);
 
 const gcd = (n1, n2) => {
     if (n2 === 0) {
@@ -31,6 +31,18 @@ const makeProgression = (minElements = 5, maxElements = 10) => {
         progression[i] = progression[i - 1] + step;
     }
     return progression;
-}
+};
 
-export { checkAnswer, getRandomNum, gcd, makeProgression };
+const isPrime = (n) => {
+    if (n <= 3) {
+        return true;
+    }
+    for (let i = 2; i <= n / 2; i += 1) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+    return true;
+};
+
+export { checkAnswer, getRandomNum, gcd, makeProgression, isPrime };
