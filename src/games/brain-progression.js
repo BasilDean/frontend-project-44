@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import {checkAnswer, gcd, getRandomNum, makeProgression} from "../index.js";
+import {checkAnswer, makeProgression} from "../index.js";
 import playGame from "./play-game.js";
 
 
@@ -10,7 +10,7 @@ const askProgressionQuestion = (name) => {
     const correctAnswer = progression[hiddenElement];
     progression[hiddenElement] = '..';
     const question = progression.join(' ');
-    console.log(`${question}`);
+    console.log(`Question: ${question}`);
     let answer = readlineSync.question('Your answer: ');
     return checkAnswer(answer, name, correctAnswer);
 };
