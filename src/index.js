@@ -5,14 +5,14 @@ const checkAnswer = (answer, name, correctAnswer) => {
     console.log('Correct!');
     return true;
   }
-  console.log(
-    `'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`
-  );
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
   console.log(`Let's try again, ${name}!`);
   return false;
 };
 
-const getRandomNum = (min = RANDOM_NUM_FLOOR, max = RANDOM_NUM_CEIL) => Math.floor(Math.random() * max + min);
+const getRandomNum = (min = RANDOM_NUM_FLOOR, max = RANDOM_NUM_CEIL) => {
+  return Math.floor(Math.random() * max + min);
+};
 
 const gcd = (n1, n2) => {
   if (n2 === 0) {
@@ -45,4 +45,10 @@ const isPrime = (n) => {
   return true;
 };
 
-export { checkAnswer, getRandomNum, gcd, makeProgression, isPrime };
+export {
+  checkAnswer,
+  getRandomNum,
+  gcd,
+  makeProgression,
+  isPrime,
+};

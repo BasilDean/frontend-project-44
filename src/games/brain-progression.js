@@ -9,7 +9,7 @@ const askProgressionQuestion = (name) => {
   progression[hiddenElement] = '..';
   const question = progression.join(' ');
   console.log(`Question: ${question}`);
-  let answer = readlineSync.question('Your answer: ');
+  const answer = readlineSync.question('Your answer: ');
   return checkAnswer(answer, name, correctAnswer);
 };
 

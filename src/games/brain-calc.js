@@ -1,4 +1,4 @@
-import readlineSync from "readline-sync";
+import readlineSync from 'readline-sync';
 import { checkAnswer, getRandomNum } from '../index.js';
 import { OPERANDS } from '../constants.js';
 import playGame from './play-game.js';
