@@ -12,8 +12,7 @@ const checkAnswer = (answer, name, correctAnswer) => {
 
 const getRandomNum = (
   min = RANDOM_NUM_FLOOR,
-  max = RANDOM_NUM_CEIL
-) => Math.floor(Math.random() * max + min);
+  max = RANDOM_NUM_CEIL) => Math.floor(Math.random() * max + min);
 
 const gcd = (n1, n2) => {
   if (n2 === 0) {
